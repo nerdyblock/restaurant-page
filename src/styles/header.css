@@ -1,0 +1,28 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    padding: 30px 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+#nav {
+    display: flex;
+    gap: 1em;
+}
+
+button {
+    border: none;
+    padding: 16px 28px;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: 800;
+}
