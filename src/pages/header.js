@@ -23,7 +23,7 @@ function headerDiv() {
     body.insertBefore(header, content);
 }
 
-export default headerDiv();
+export default headerDiv;
 
 
 
