@@ -1,0 +1,20 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+#content {
+    display: flex;
+    gap: 3em;
+    height: 80vh;
+    padding: 20px 160px 0px 90px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img {
+    width: 40%;
+    height: 90%;
+    border-radius: 10px;
+}
+
