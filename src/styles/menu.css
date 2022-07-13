@@ -1,0 +1,28 @@
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    justify-content: center;
+    gap: 3em;
+    padding: 20px 160px;
+}
+
+#menu-div {
+    display: flex;
+    gap: 2em;
+    margin: 20px;
+    align-items: center;
+}
+
+.image {
+
+    width: 100px;
+    height: 200px;
+}
+
+.fish-curry {
+    background-image: url('../images/fish-curry.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80%;
+    width: 40%;
+}
