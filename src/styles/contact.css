@@ -1,5 +1,26 @@
 .contact {
+    padding: 50px;
+}
+
+.contact-us-text {
+    text-align: center;
+}
+
+.contact-div {
     display: flex;
+    gap: 10em;
+    margin-top: 50px;
     justify-content: center;
-    align-items: center;
+}
+
+.contact-info {
+    display: flex;
+    gap: 2em;
+    margin-bottom: 1em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
