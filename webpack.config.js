@@ -8,6 +8,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'main.js',
         clean: true,
+        assetModuleFilename: 'images/[hash][ext]'
     },
     devtool: 'source-map',
     devServer: {
@@ -37,15 +38,8 @@ module.exports = {
                 },
             },
             {
-                test: /\.(png|svg|jpg|jpeg|gif)$/i,
-                use: {
-                    loader: "file-loader",
-                    options: {
-                        esModule: false,
-                        name: "[name].[hash].[ext]",
-                        outputPath: "images"
-                    }
-                }
+                test: /\.(png|jpg|svg|jpeg|gif)$/i,
+                type: 'asset/resource',
             },
         ],
     },
