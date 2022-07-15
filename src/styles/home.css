@@ -3,18 +3,19 @@
     margin: 0px;
 }
 
-#content {
+.home {
+    background-image: url('../asset/images/thali.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
     display: flex;
-    gap: 3em;
     height: 80vh;
     padding: 20px 160px 0px 90px;
     align-items: center;
-    justify-content: space-between;
 }
 
-img {
-    width: 40%;
-    height: 90%;
-    border-radius: 10px;
+.site-info {
+    line-height: 3rem;
 }
+
 
