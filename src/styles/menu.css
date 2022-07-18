@@ -34,45 +34,16 @@
     color: rgb(75, 73, 73);
 }
 
-.image {
+.image-div {
     border-radius: 10px;
     width: 250px;
     height: 200px;
     box-shadow: 5px 5px 10px rgb(48, 48, 48);
 }
 
-.fish-curry {
-    background-image: url('../asset/images/fish-curry.jpg');
-    background-size: cover;
-    background-position: center;
+.image {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-
-.pakoda {
-    background-image: url('../asset/images/pakoda.jpg');
-    background-size: cover;
-}
-
-.chicken-biryani {
-    background-image: url('../asset/images/chicken-biryani.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-.idli {
-    background-image: url('../asset/images/idli.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-.pav-bhaji {
-    background-image: url('../asset/images/pav-bhaji.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-.samosa {
-    background-image: url('../asset/images/samosa.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
