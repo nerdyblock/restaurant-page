@@ -50,6 +50,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: 'src/template.html',
+            favicon: 'src/asset/favicon.ico'
         }),
     ],
     mode: process.env.NODE_ENV === "production" ? "production" : "development",
