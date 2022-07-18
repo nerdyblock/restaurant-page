@@ -4,13 +4,17 @@ function headerDiv() {
     
     const header = document.createElement('header');
     const siteName = document.createElement('h1');
+    siteName.setAttribute('id', 'sitename')
     siteName.innerText = "Nerdy's Kitchen";
 
     const nav = document.createElement('div');
-    nav.classList.add('nav');
+    nav.setAttribute('id', 'nav')
     const home = document.createElement('button');
+    home.setAttribute('id', 'home');
     const menu = document.createElement('button');
+    menu.setAttribute('id', 'menu');
     const contact = document.createElement('button');
+    contact.setAttribute('id', 'contact');
     home.textContent = 'Home';
     menu.textContent = 'Menu';
     contact.textContent = 'Contact';
@@ -18,8 +22,7 @@ function headerDiv() {
 
     nav.append(home, menu, contact);
 
-    header.append(siteName);
-    header.append(nav);
+    header.append(siteName, nav);
     body.insertBefore(header, content);
 }
 
