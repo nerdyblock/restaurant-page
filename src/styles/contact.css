@@ -1,9 +1,13 @@
 .contact {
-    padding: 50px;
+    padding: 40px;
+    background-color: #1B263C;
+    color: #fff;
 }
 
 .contact-us-text {
     text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgb(189, 187, 187);
 }
 
 .contact-div {
@@ -17,10 +21,23 @@
     display: flex;
     gap: 2em;
     margin-bottom: 1em;
+    font-size: 1.4rem;
 }
 
 form {
     display: flex;
     flex-direction: column;
     gap: 1em;
+}
+
+input, 
+textarea {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.submit {
+    width: 200px;
+    font-size: 1.4rem;
 }

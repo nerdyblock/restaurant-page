@@ -1,7 +1,8 @@
 .menu {
-    display: flex;
-    flex-direction: column;
-    padding-left: 20%;
+    display: grid;
+    grid-template-columns: repeat(2, 600px);
+    gap: 2em;
+    padding: 20px 0px 40px 80px;
 }
 
 #menu-div {
@@ -18,43 +19,59 @@
     gap: 1em;
 }
 
+.item-div h2 {
+    font-size: 2rem;
+    color: #1B263C;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #3d4452;
+}
+
+.item-div h3 {
+    color: #1B263C;
+}
+
+.item-div p {
+    color: rgb(75, 73, 73);
+}
+
 .image {
     border-radius: 10px;
     width: 250px;
     height: 200px;
+    box-shadow: 5px 5px 10px rgb(48, 48, 48);
 }
 
 .fish-curry {
-    background-image: url('../images/fish-curry.jpg');
+    background-image: url('../asset/images/fish-curry.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .pakoda {
-    background-image: url('../images/pakoda.jpg');
+    background-image: url('../asset/images/pakoda.jpg');
     background-size: cover;
 }
 
 .chicken-biryani {
-    background-image: url('../images/chicken-biryani.jpg');
+    background-image: url('../asset/images/chicken-biryani.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .idli {
-    background-image: url('../images/idli.jpg');
+    background-image: url('../asset/images/idli.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .pav-bhaji {
-    background-image: url('../images/pav-bhaji.jpg');
+    background-image: url('../asset/images/pav-bhaji.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .samosa {
-    background-image: url('../images/samosa.jpg');
+    background-image: url('../asset/images/samosa.jpg');
     background-size: cover;
     background-position: center;
 }

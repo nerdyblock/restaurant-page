@@ -1,17 +1,14 @@
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
 header {
+    background-color: rgb(233, 230, 230);
     display: flex;
-    padding: 30px 40px;
+    padding: 30px 80px 30px 80px;
     justify-content: space-between;
     align-items: center;
 }
 
 header h1 {
     font-size: 3rem;
+    color: #1B263C;
 }
 
 #nav {
@@ -21,6 +18,8 @@ header h1 {
 
 button {
     border: none;
+    background-color: #fff;
+    color: #1B263C;
     padding: 16px 28px;
     border-radius: 15px;
     font-size: 1rem;

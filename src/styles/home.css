@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
 * {
     padding: 0px;
     margin: 0px;
+    font-family: 'cursive', 'Rubik', sans-serif
 }
 
 .home {
@@ -9,13 +12,32 @@
     background-position: center;
     color: white;
     display: flex;
+    flex-direction: column;
+    gap: 1em;
     height: 80vh;
-    padding: 20px 160px 0px 90px;
-    align-items: center;
+    padding: 20px 160px 0px 80px;
+    justify-content: center;
+}
+
+.home h1 {
+    font-size: 2.6rem;
+    font-weight: 400;
+}
+
+.home h2 {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: rgb(211, 207, 207);
+}
+
+.order {
+    font-size: 1.8rem;
+    font-weight: 600;
 }
 
 .site-info {
     line-height: 3rem;
+    width: 700px;
 }
 
 
