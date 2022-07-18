@@ -1,18 +1,7 @@
-// import samosa from '../images/samosa.jpg';
-// import fishCurry from '../images/fish-curry.jpg';
-// import pakoda from '../images/pakoda.jpg';
-// import idli from '../images/idli.jpg';
-// import chickenBiryani from '../images/chicken-biryani.jpg';
-// import pavBhaji from '../images/pav-bhaji.jpg';
-
 const content = document.getElementById('content');
 
-// remove when whole site is done from all places
-content.classList.add('menu');
-content.classList.remove('home');
-content.classList.remove('contact');
-
 function menu() {
+    content.classList.add('menu');
     createMenuDiv('Samosa', ' ₹49', 'samosa', 'Perfect mix of spicy & crunchy. Enjoy your evening with samosa and chai');
     createMenuDiv('Fish Curry', ' ₹399', 'fish-curry', 'Spicy & healthy , a high protein food. Helthy food that tastes good');
     createMenuDiv('Idli', ' ₹149', 'idli', 'Healthy & basic made from rice, enjoy with coconut chutney');
@@ -23,12 +12,11 @@ function menu() {
 
 function createMenuDiv(name, cost, imageSrc, desc) {
     const menuDiv = document.createElement('div');
-    menuDiv.setAttribute('id', 'menu-div')
+    menuDiv.setAttribute('id', 'menu-div');
 
     const itemName = document.createElement('h2');
     const itemCost =  document.createElement('h3');
     const itemDesc = document.createElement('p');
-    // const itemImage = document.createElement('img');
 
     const itemImage = document.createElement('div');
     itemImage.classList.add('image');
@@ -39,12 +27,25 @@ function createMenuDiv(name, cost, imageSrc, desc) {
     itemName.textContent = name;
     itemDesc.textContent = desc;
     itemDiv.append(itemName, itemCost, itemDesc);
-    itemDiv.classList.add('item-div')
-
-    // itemImage.src = imageSrc;
+    itemDiv.classList.add('item-div');
 
     menuDiv.append(itemImage, itemDiv);
     content.append(menuDiv);
+    highligthNav();
+}
+
+function highligthNav() {
+    const homeNav = document.getElementById('home');
+    const contactNav = document.getElementById('contact');
+    const menuNav = document.getElementById('menu');
+
+    menuNav.style.backgroundColor = '#1B263C';
+    menuNav.style.color = '#fff';
+
+    contactNav.style.backgroundColor = '#fff';
+    contactNav.style.color = '#1B263C';
+    homeNav.style.backgroundColor = '#fff';
+    homeNav.style.color = '#1B263C';
 }
 
 export default menu;
