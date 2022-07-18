@@ -38,8 +38,12 @@ module.exports = {
                 },
             },
             {
-                test: /\.(png|jpg|svg|jpeg|gif)$/i,
+                test: /\.(png|jpg|jpeg|gif)$/i,
                 type: 'asset/resource',
+            },
+            {
+                test: /\.(svg)$/i,
+                type: 'asset/inline',
             },
         ],
     },
